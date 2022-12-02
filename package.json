@@ -1,5 +1,5 @@
 {
-  "name": "remembear-api",
+  "name": "keseich-api",
   "version": "0.0.1",
   "description": "",
   "main": "lib/server.js",
@@ -23,12 +23,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/florianthalmann/remembear-api.git"
+    "url": "git+https://github.com/keseich/keseich-api.git"
   },
   "author": "florianthalmann",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/florianthalmann/remembear-api/issues"
+    "url": "https://github.com/keseich/keseich-api/issues"
   },
-  "homepage": "https://github.com/florianthalmann/remembear-api#readme"
+  "homepage": "https://github.com/keseich/keseich-api#readme"
 }
