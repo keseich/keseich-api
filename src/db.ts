@@ -1,7 +1,6 @@
 import * as _ from 'lodash';
 import { MongoClient, Db, ObjectID } from 'mongodb';
 //import { URL } from '../config';
-import { URL } from './config';
 import { Edit } from './types';
 import { DbUser, Memory, MemoryFilter, MemoryUpdate,　DbStudy } from './db-types';
 import { SETS } from './consts';
@@ -9,7 +8,8 @@ import { SETS } from './consts';
 let db: Db;
 
 export function connect() {
-  return MongoClient.connect(URL, { useNewUrlParser: true, useUnifiedTopology: true })
+  return MongoClient.connect(`mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@remembear.ydlx4.mongodb.net/rememberize?retryWrites=true&w=majority`,
+     { useNewUrlParser: true, useUnifiedTopology: true })
     .then(client => db = client.db('rememberize'));
 }
 
