@@ -1,0 +1,167 @@
+id	bärndütsch	english	info	freq_dcae	freq_fict		
+1	ja	yes					
+2	nei	no					
+3	viellech	maybe					
+4	eis	one			47		
+5	zwöi	two					
+6	drü	three					
+7	vier	four					
+8	füüf	five					
+9	sächs	six					
+10	siebe	seven					
+11	acht	eight					
+12	nüün	nine					
+13	zäh	ten					
+14	hundert	hundred					
+15	grüessech	hello (formal)					
+16	hallo	hello (informal)					
+17	wie geits?	how’s it going?					
+18	"guet, u dir?"	"good, and you?"					
+19	ade	good bye (formal)					
+20	tschüss	bye bye					
+21	schöne Tag	have a nice day					
+22	bis gly	see you soon (until soon)					
+23	uf wiederluege	see you soon (formal)					
+24	guete Morge	good morning					
+25	guete Aabe	good evening					
+26	"ig, i"	"I, me"		11	2		
+27	du	you (singular)		14	9		
+28	sie	she		33	13		
+29	är	he		15	8		
+30	mir	we		25	43		
+31	dir	you (plural)		14	9		
+32	sie	they		21	38		
+33	"dr, d, ds"	the		1	1		
+34	dr Wouf	the wolf					
+35	d Chatz	the cat					
+36	ds Huen 	the chicken					
+37	sy	to be		2	27		
+38	i bi so blöd	I am so stupid					
+39	du bisch huere schön	you are so beautiful					
+40	sie isch kes Huen	she is not a chicken					
+41	i bi d Yuko	I am Yuko					
+42	fröit mi	pleased to meet you					
+43	u	and		3	4		
+44	du u ig	you and I					
+45	wo	where					
+46	wo isch Hakone?	where is Hakone?					
+47	vo	"of, from"		"4,27"	"6,41"		
+48	dr Wouf vo Bärn	the wolf of Berne					
+49	vo wo bisch du?	where are you from?					
+50	"e, e, es"	a		5	5		
+51	e Bärg	a mountain					
+52	e Stadt	a city					
+53	es Schneehuen	a Ptarmigan					
+54	"z, i"	in (place)		6	11		
+55	i bi z Tokyo	I am in Tokyo					
+56	dr Wouf i dir	the wolf in you					
+57	"uf, i, a"	to		"7,9"	3		
+58	"gah (gah, geisch, geit)"	to go		36	37		
+59	i gah uf Kyoto	I go to Kyoto					
+60	du geisch i d Stadt	you go to town					
+61	är geit hei	he goes home					
+62	"ha (ha, hesch, het)"	to have		8	32		
+63	I ha Hunger	I am hungry					
+64	hesch du fescht Durscht	are you very thirsty?					
+65	sie het ke Angscht	she is not afraid					
+66	e Guete!	enjoy your meal!					
+67	proscht!	cheers! (kanpai)					
+68	göh mir eis gah zie?	should we go have a drink?					
+69	chumm mir suufe	let’s drink					
+70	es	it		10	10		
+71	es isch luschtig	it is funny					
+72	das	"this, that"		"12,22,28"	"14,40"		
+73	das bi ig	this is me					
+74	das isch nid kuhl	that is not cool					
+75	für	for		13	23		
+76	für d Chatz	for nothing					
+77	mit	with		16	19		
+78	e Bärg mit Schnee	a mountain with snow					
+79	was	what		35	33		
+80	"mache (mache, machsch, macht)"	to do		18	46		
+81	i mache mit	I participate					
+82	was machsch?	what are you doing?					
+83	es macht nüt	it’s not a big deal					
+84	uf	on		17	18		
+85	ds Schneehuen ufem Bärg	the Ptarmigan on the mountain					
+86	"säge (säge, seisch, seit)"	to say		20			
+87	i säge gar nüt	I say nothing at all					
+88	was seisch du?	what do you say?					
+89	sie seit öppis luschtigs	she says something funny					
+90	tschuldigung	"excuse me, sorry"					
+91	es tuet mir leid	i’m sorry					
+92	merci	thanks					
+93	isch gärn gscheh	you're welcome					
+94	bitte	you’re welcome /please					
+95	wie seit me Fisch uf Schwyzerdütsch?	how do you say fish in Swiss German?					
+96	aber	but		23	24		
+97	aber schön	but nice					
+98	"am, a dr"	at		24	20		
+99	am Fluss	at the river					
+100	"mi, mini, mis"	my			15		
+101	das isch mini Schoggi	this is my chocolate					
+102	"di, dini, dis"	your (singular)					
+103	dis Chätzli isch härzig	your kitten is cute					
+104	"ihre, ihri, ihres"	her			12		
+105	ihres Tokyo isch schön	her Tokyo is beautiful					
+106	"si, sini, sis"	his		26	16		
+107	sini Nase isch gross	his nose is big					
+108	nid	not		"29,30"	34		
+109	das isch nid nüt	that’s not nothing					
+110	bi	by		31			
+111	bi de Wöuf	by the wolves					
+112	oder	or		32			
+113	ir Stadt oder ufem Bärg	in the city or on the mountain					
+114	wär	who		39			
+115	wär isch das?	who is this?					
+116	(e) chli	a little					
+117	"chönne (cha, chasch, cha)"	to can		40			
+118	chani chli Schoggi?	can I have a little chocolate?					
+119	chasch du Karaoke singe?	can you sing karaoke?					
+120	är cha öppis mache	he can do something					
+121	gsy	"was, were"			"7,44"		
+122	i bi müed gsy	I was tired					
+123	gha	had			22		
+124	du hesch Durscht gha	you were thirsty					
+125	gseit	said			26		
+126	was hesch gseit?	what did you say?					
+127	ufe	up			28		
+128	du geisch ufe	you are going up					
+129	abe	down					
+130	göh mir a Fluss abe?	are we going down to the river?					
+131	o	also					
+132	i ha o Hunger	I am also hungry					
+133	"wöue (wott, wosch, wott)"	to want					
+134	i wott e chli Chäs	i want some chees					
+135	was wosch hüt mache?	what do you want to do today?					
+136	wott sie o chli i singe?	does she also want to sing a little?					
+137	use	out			29		
+138	wei mir no chli use?	should we go outside for a bit?					
+139	ine	in (direction)		6	11		
+140	luege	to look			30		
+141	i wott ine luege	i want to look in					
+142	was luegsch?	what are you looking at?					
+143	är luegt blöd	he’s staring (at us)					
+144	"auso, so"	"so, well, ok"			31		
+145	"auso, i gah itz hei"	"ok, i am going home now"					
+146	i bi so vou	I am so full					
+147	nume	"just, only"			35		
+148	es het nume eis	there is only one					
+149	wie	like			36		
+150	wie di Grosse	like adults					
+151	gärn ha	to like			36		
+152	i ha di gärn	i like you (i love you)					
+153	sie het gärn Chäs	she likes cheese					
+154	"aues, aui"	"all, everything"			42		
+155	aues isch so schön	everything is so beautiful					
+156	voore	front					
+157							
+158	hinger	back			45		
+159							
+160	über	about			48		
+161							
+162	wüsse	to know	"weiss, weisch, weiss, wüsse, wüsset, wüsse"		49		
+163	i weiss nid	i don’t know					
+164	weisch no?	do you remember that time?					
+165							
+166	"we, wenn"	if			50		

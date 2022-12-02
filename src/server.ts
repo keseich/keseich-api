@@ -10,8 +10,7 @@ const PORT = process.env.PORT || 8060;
 
 const app = express();
 app.use(bodyParser.json());
-app.use(express.static('data/audio-words/'));
-app.use(express.static('data/audio-sentences/'));
+app.use(express.static('data/audio/'));
 
 app.use((_, res, next) => {
   res.header("Access-Control-Allow-Origin", "*");
@@ -62,10 +61,10 @@ app.post('/edit', async (req, res) => {
 async function init() {
   await db.connect();
   app.listen(PORT, () => {
-    console.log('remembear server live on ' + PORT);
+    console.log('keseich server live on ' + PORT);
   });
 
-  //console.log(JSON.stringify(await qrs.getNewQuestions('furotaru', 0, 1)))
+  //console.log(JSON.stringify(await qrs.getNewQuestions('test', 0, 1)))
   /*console.log(await db.findOne('test_memories', {}))
   await db.delayMemories('test');
   console.log(await db.findOne('test_memories', {}))*/

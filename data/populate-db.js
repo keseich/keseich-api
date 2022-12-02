@@ -2,17 +2,15 @@ const fs = require('fs');
 const db = require('../lib/db');
 const parse = require('csv-parse/lib/sync');
 
-const KANJI_FILE = 'kanji.csv';
-const KANJI_COLL = 'kanji';
-const VOCAB_FILE = 'core2k6k10k.csv';
-const VOCAB_COLL = 'core10k';
+const FILE = 'woerter.tsv';
+const COLL = 'woerter';
 
-//populate(KANJI_FILE, KANJI_COLL);
+populate(FILE, COLL);
 //addKanjiOptIndex()
 //update2k1KOIndex()
 
 async function populate(file, coll) {
-  let words = await csvToJson(file, '@');
+  let words = await csvToJson(file, '\t');
   await db.connect();
   let inserted = await db.insert(coll, words);
   console.log(inserted)
@@ -76,6 +74,9 @@ function csvToJson(file, separator) {
       let words = rows.slice(1).map(r => {
         let obj = {};
         r.forEach((v,i) => obj[keys[i]] = v);
+        obj["id"] = parseInt(obj["id"]);
+        obj["freq_dcae"] = parseInt(obj["freq_dcae"]);
+        obj["freq_fict"] = parseInt(obj["freq_fict"]);
         return obj;
       });
       resolve(words);

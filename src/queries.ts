@@ -3,7 +3,7 @@ import { ObjectID } from 'mongodb';
 import * as db from './db';
 import { Memory, MemoryFilter, DbStudy } from './db-types';
 import { Set, Question, Study, UserStatus, Answer, Attempt } from './types';
-import { AUDIO_LOCATION, SETS, STUDY_TYPE, VOC_KNA } from './consts';
+import { AUDIO_LOCATION, SETS, STUDY_TYPE, BAER, AUDI } from './consts';
 import { createAnswers } from './util';
 import { findSimilarKanjis } from './similarity';
 //levels/avgdays: 1:.5, 2:1.5, 3:4.5, 4:10.5, 5:21, 6:42, 7:84, 8:168, 9:336
@@ -126,10 +126,10 @@ async function getAltAnswers(entries: {}[], set: Set, dirIndex: number) {
   let dir = set.directions[dirIndex];
   if (SETS.indexOf(set) == 1 && dirIndex == 2) { //alt answers for audio direction
     let altAnswers = await db.find(set.collection,
-      {[VOC_KNA]: { $in: entries.map(e => _.trim(e[VOC_KNA]))}},
-      { _id: 0, [VOC_KNA]: 1, [dir.answer]: 1 });
+      {[BAER]: { $in: entries.map(e => _.trim(e[BAER]))}},
+      { _id: 0, [BAER]: 1, [dir.answer]: 1 });
     altAnswers.forEach(a =>
-      a[dir.question] = entries.filter(e => a[VOC_KNA] === e[VOC_KNA]).map(e => e[dir.question]));
+      a[dir.question] = entries.filter(e => a[BAER] === e[BAER]).map(e => e[dir.question]));
     return altAnswers;
   }
   let qs = entries.map(e => e[dir.question]);
@@ -155,7 +155,7 @@ async function toQuestion(username: string, entry: {}, set: Set, dirIndex: numbe
     .concat(edits)).map(a => createAnswers(a)));
   return {
     wordId: entry[set.idField],
-    question: entry[dir.question],
+    question: dir.question == AUDI ? entry[dir.question] + '.m4a' : entry[dir.question],
     options: dir.numOptions ? [] : undefined,
     answers: answers,
     fullAnswers: entry[dir.answer],
@@ -166,7 +166,7 @@ async function toQuestion(username: string, entry: {}, set: Set, dirIndex: numbe
 }
 
 function toAudioPath(audio: string) {
-  return AUDIO_LOCATION + audio.slice(7, audio.length-1);
+  return AUDIO_LOCATION + audio + '.m4a';//.slice(7, audio.length-1);
 }
 
 function toNewMemory(filter: MemoryFilter, studyId: ObjectID, attempts: Attempt[]): Memory {
